@@ -24,6 +24,7 @@ Authority reflects content and explicit status, not file modification time. “C
 | frikshun_image_studio | `studio/milestones/chloe_model_v1.json` | Visual milestone | Approved machine record | Complete, not superseded | ADR-002 | Locked traits and status |
 | frikshun_image_studio | `studio/reference-packs/chloe_model_v1/` | Canon image references | Approved versioned pack | Approved 2026-06-26; not superseded | `assets/chloe-model-v1/` | Copied intact, including images, manifests, model cards, and prompt audits |
 | frikshun_image_studio | `AGENTS.md` | Voice/visual governance | Repository instructions | Current | identity, boundaries | Adds glamour and pronunciation rules |
+| Allen Taylor / FoxyAI | `projects/chloekatastrophe/assets/cybernetic-chloe-v1/` | Cybernetic visual canon | Approved | 3 stills + 1 motion study supplied and approved 2026-07-27 | cybernetic-body, ADR-005 | Manifest checksums and per-asset limitations are authoritative |
 | creator_frikshun | `README.md` | Creator implementation | Current implementation doc | Current; later than evil-plan MVP | capabilities, architecture | Secrets/config values excluded |
 | creator_frikshun | `docs/fan-engagement-cadence.md` | Engagement | Current operating policy | Current | workflows, rules | No compulsory ordinary-post footer |
 | creator_frikshun | `docs/chloe_tiktok_series/series-bible.md` | Video production | Canon-derived guidance | v0.1, voice provisional | voice, UI | Visual rules match Model v1 |

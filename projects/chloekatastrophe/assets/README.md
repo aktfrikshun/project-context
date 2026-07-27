@@ -13,6 +13,10 @@ This directory contains a preserved copy of the approved **Chloe Model v1** refe
 
 The pack includes the approved individual identity, character-turnaround, core-performance, and cinematic-performance images together with their manifests and prompt-audit metadata. The duplicated pack-level contact sheets are retained because they belong to the source package.
 
+## Pending pack
+
+- [Cybernetic Chloe v1](cybernetic-chloe-v1/README.md) is an intake location, not approved visual canon. No approved reference images are currently present.
+
 ## Authority and usage
 
 Status: approved production visual canon.

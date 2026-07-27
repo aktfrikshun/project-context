@@ -1,3 +1,5 @@
 projects/chloekatastrophe/assets/**/*.png filter=lfs diff=lfs merge=lfs -text
 projects/chloekatastrophe/assets/**/*.jpg filter=lfs diff=lfs merge=lfs -text
 projects/chloekatastrophe/assets/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+projects/chloekatastrophe/assets/**/*.webp filter=lfs diff=lfs merge=lfs -text
+projects/chloekatastrophe/assets/**/*.mp4 filter=lfs diff=lfs merge=lfs -text

@@ -3,18 +3,19 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-from .build import BASELINE_FILES, build_chunks, discover
+from .assets import validate_asset_manifests
+from .build import BASELINE_FILES, PROJECT, build_chunks, discover
 from .markdown import load_document
 
 LINK = re.compile(r"(?<!!)\[[^\]]*]\(([^)#]+)(?:#[^)]+)?\)")
 ALLOWED_STATUS = {
-    "active", "accepted", "complete", "draft", "proposed", "deprecated",
-    "superseded", "rejected",
+    "active", "accepted", "approved", "complete", "draft", "proposed", "deprecated",
+    "superseded", "rejected", "intake_pending", "unresolved",
 }
 
 
 def validate(root: Path, source_revision: str = "validation") -> list[str]:
-    errors: list[str] = []
+    errors: list[str] = validate_asset_manifests(root, PROJECT)
     for relative in BASELINE_FILES:
         if not (root / relative).is_file():
             errors.append(f"missing required baseline source: {relative}")
@@ -45,4 +46,3 @@ def validate(root: Path, source_revision: str = "validation") -> list[str]:
             if not linked.exists():
                 errors.append(f"{document.path}: broken link: {target}")
     return errors
-

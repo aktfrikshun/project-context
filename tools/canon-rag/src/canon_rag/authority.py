@@ -24,16 +24,21 @@ STATUS_PATTERN = re.compile(
 
 def _normalized_status(document: Document, section: Section) -> str:
     explicit = str(document.metadata.get("status", "")).lower()
+    explicit_authority = str(document.metadata.get("authority", "")).lower()
     status_match = STATUS_PATTERN.search(section.body)
     section_status = status_match.group(1).lower() if status_match else ""
     status = f"{explicit} {section_status} {section.heading.lower()}"
     path = document.path.lower()
 
+    if explicit_authority in AUTHORITY_SCORE:
+        return explicit_authority
     if "/assets/chloe-model-v1/" in path and path.endswith(("model_card.md", "readme.md")):
         return "accepted_canon"
     if "deprecated" in path or any(word in status for word in ("deprecated", "superseded", "rejected")):
         return "deprecated"
     if "unresolved" in path or any(word in status for word in ("unresolved", "open question", "contradiction")):
+        return "unresolved"
+    if "intake_pending" in status or "intake pending" in status:
         return "unresolved"
     if any(word in status for word in ("draft canon", "draft approved")):
         return "draft_canon"

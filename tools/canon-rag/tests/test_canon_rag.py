@@ -50,5 +50,13 @@ def test_active_model_card_is_accepted_visual_canon() -> None:
     assert result["default_eligible"] is True
 
 
+def test_cybernetic_specification_is_accepted_visual_canon() -> None:
+    path = ROOT / "projects/chloekatastrophe/experience/cybernetic-body.md"
+    document = load_document(ROOT, path)
+    result = classify(document, sections(document)[0])
+    assert result["authority"] == "accepted_canon"
+    assert result["requires_status_label"] is False
+
+
 def test_repository_validates() -> None:
     assert validate(ROOT) == []

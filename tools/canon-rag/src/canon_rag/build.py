@@ -7,7 +7,9 @@ import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
+from .assets import load_asset_records, sha256_file
 from .authority import classify
+from .embeddings import EmbeddingAdapter, HashEmbeddingAdapter
 from .markdown import load_document, sections
 
 PROJECT = Path("projects/chloekatastrophe")
@@ -47,11 +49,13 @@ def build_chunks(root: Path, source_revision: str) -> list[dict[str, object]]:
     chunks: list[dict[str, object]] = []
     for path in discover(root):
         document = load_document(root, path)
+        source_sha256 = sha256_file(path)
         for ordinal, section in enumerate(sections(document)):
             authority = classify(document, section)
             chunks.append(
                 {
                     "id": _chunk_id(document.path, ordinal, section.heading_path, section.body),
+                    "record_type": "markdown",
                     "ordinal": ordinal,
                     "project": "chloekatastrophe",
                     "path": document.path,
@@ -60,11 +64,12 @@ def build_chunks(root: Path, source_revision: str) -> list[dict[str, object]]:
                     "heading_path": list(section.heading_path),
                     "text": section.body,
                     "source_revision": source_revision,
+                    "source_sha256": source_sha256,
                     "metadata": document.metadata,
                     **authority,
                 }
             )
-    return chunks
+    return chunks + load_asset_records(root, PROJECT, source_revision)
 
 
 def build_baseline(root: Path, source_revision: str) -> str:
@@ -81,21 +86,53 @@ def build_baseline(root: Path, source_revision: str) -> str:
     return "\n".join(parts).rstrip() + "\n"
 
 
-def write_artifacts(root: Path, output: Path) -> dict[str, object]:
+def _load_previous(path: Path | None) -> dict[str, dict[str, object]]:
+    if not path or not path.is_file():
+        return {}
+    records: dict[str, dict[str, object]] = {}
+    with path.open(encoding="utf-8") as stream:
+        for line in stream:
+            record = json.loads(line)
+            records[str(record["id"])] = record
+    return records
+
+
+def write_artifacts(
+    root: Path,
+    output: Path,
+    *,
+    previous_chunks: Path | None = None,
+    full_rebuild: bool = False,
+    embedder: EmbeddingAdapter | None = None,
+) -> dict[str, object]:
     source_revision = revision(root)
     chunks = build_chunks(root, source_revision)
+    embedder = embedder or HashEmbeddingAdapter()
+    previous = {} if full_rebuild else _load_previous(previous_chunks)
+    reused = 0
+    for chunk in chunks:
+        prior = previous.get(str(chunk["id"]))
+        if prior and prior.get("source_sha256") == chunk.get("source_sha256") and isinstance(prior.get("embedding"), list):
+            chunk["embedding"] = prior["embedding"]
+            reused += 1
+        else:
+            chunk["embedding"] = embedder.embed(f"{chunk.get('title', '')}\n{chunk.get('heading', '')}\n{chunk.get('text', '')}")
     output.mkdir(parents=True, exist_ok=True)
     (output / "baseline.md").write_text(build_baseline(root, source_revision), encoding="utf-8")
     with (output / "chunks.jsonl").open("w", encoding="utf-8") as stream:
         for chunk in chunks:
             stream.write(json.dumps(chunk, ensure_ascii=False, sort_keys=True) + "\n")
     manifest = {
-        "schema_version": 1,
+        "schema_version": 2,
         "project": "chloekatastrophe",
         "source_revision": source_revision,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "document_count": len(discover(root)),
         "chunk_count": len(chunks),
+        "asset_count": sum(chunk.get("record_type") == "asset" for chunk in chunks),
+        "embedding_adapter": embedder.name,
+        "reused_embedding_count": reused,
+        "full_rebuild": full_rebuild,
         "artifacts": ["baseline.md", "chunks.jsonl"],
         "authority_counts": {
             authority: sum(chunk["authority"] == authority for chunk in chunks)

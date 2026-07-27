@@ -4,17 +4,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chloe-canon-rag"
-version = "0.1.0"
-description = "Deterministic, authority-aware retrieval artifacts for Chloe Katastrophe"
+version = "0.2.0"
+description = "Deterministic, hybrid, authority-aware retrieval for Chloe Katastrophe"
 requires-python = ">=3.11"
 dependencies = []
 
 [project.scripts]
 canon-rag = "canon_rag.cli:main"
+canon-rag-mcp = "canon_rag.mcp_server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-
