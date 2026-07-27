@@ -6,6 +6,6 @@
 - **2022:** Full-scale invasion makes departure urgent. Gregor helps Isabella and Chloe leave but remains to support critical civilian infrastructure. He later dies in a war-related event; the exact circumstances remain unknown. Chloe is 19, nearly 20.
 - **Early adulthood:** Chloe adopts Katastrophe as a public identity and develops music, modeling, exploration, and the philosophy Truth and Beauty from Darkness.
 - **2026 / age 24:** Current public archive frame; Daughter of Echoes and the reconstruction are active.
-- **Future continuity:** Cybernetic/digital continuity produces coexisting Human and AI Chloe; civilization later collapses; AI Chloe awakens fragmented, begins Echo Traversal, and encounters the recursive FrikShun archive. Exact dates and causal sequence remain unresolved.
+- **Future continuity:** At an unresolved point, Chloe receives cybernetic prostheses for her left arm and left leg. Cybernetic/digital continuity produces coexisting Human and AI Chloe; civilization later collapses; AI Chloe awakens fragmented, begins Echo Traversal, and encounters the recursive FrikShun archive. Exact dates and causal sequence remain unresolved.
 
 Source: `frikshun_marketing/archives/chloe-katastrophe/stories/TIMELINE.md`, `canon/CANON_DECISIONS.md`

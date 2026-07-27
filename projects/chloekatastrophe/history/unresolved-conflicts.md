@@ -49,3 +49,11 @@ The canonical public-identity file still lists TikTok handle, first post, introd
 Source: marketing archive `canon/PUBLIC_IDENTITY.md`; Creator OS implementation docs
 
 Human review: Reconcile public identity canon with live channel state before treating any handle or workflow as confirmed.
+
+## Cybernetic Chloe visual design
+
+Future cybernetic continuity and the Cybernetic Chloe v1 visual pack are confirmed canon. The approved media establish left-arm and left-leg prostheses, their visible clear/green-lit/silver-and-dark design, articulation, and observed light behavior. Rear surfaces, hidden mechanisms, exact material composition, surgical interfaces, and any artificial-eye laterality or appearance remain unresolved and must not be inferred.
+
+Source: `experience/cybernetic-body.md`, `assets/cybernetic-chloe-v1/manifest.json`
+
+Human review: Supply the approved original images and confirm their provenance, approval, and permitted uses so the v1 pack can be completed.

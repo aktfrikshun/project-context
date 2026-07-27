@@ -40,13 +40,27 @@ jobs:
       - name: Build retrieval artifacts
         env:
           CANON_SOURCE_REVISION: ${{ github.sha }}
-        run: canon-rag build
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            canon-rag build --full
+          else
+            canon-rag build
+          fi
+      - name: Evaluate retrieval policy
+        run: python -m pytest tools/canon-rag/tests/test_retrieval.py
+      - name: Verify published revision
+        if: github.event_name != 'pull_request'
+        env:
+          CANON_SOURCE_REVISION: ${{ github.sha }}
+        run: canon-rag ready
       - name: Upload commit-addressed artifacts
         if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v4
         with:
           name: chloe-canon-rag-${{ github.sha }}
-          path: generated/chloekatastrophe/
+          path: |
+            generated/chloekatastrophe/current.json
+            generated/chloekatastrophe/previous.json
+            generated/chloekatastrophe/releases/${{ github.sha }}/
           if-no-files-found: error
           retention-days: 90
-

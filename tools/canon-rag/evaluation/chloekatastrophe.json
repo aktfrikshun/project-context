@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "project": "chloekatastrophe",
+  "cases": [
+    {
+      "query": "Cybernetic Chloe having coffee in a garden",
+      "required_paths": [
+        "projects/chloekatastrophe/assets/chloe-model-v1/MODEL_CARD.md",
+        "projects/chloekatastrophe/experience/cybernetic-body.md"
+      ],
+      "required_statuses": ["accepted_canon"],
+      "prohibited_paths": ["projects/chloekatastrophe/history/deprecated.md"]
+    },
+    {
+      "query": "Which side of Chloe is cybernetic?",
+      "required_paths": ["projects/chloekatastrophe/experience/cybernetic-body.md"],
+      "required_text": ["left arm", "left leg"],
+      "required_statuses": ["accepted_canon"]
+    },
+    {
+      "query": "What does her artificial eye look like?",
+      "required_paths": ["projects/chloekatastrophe/experience/cybernetic-body.md"],
+      "required_text": ["artificial eye", "which eye"],
+      "required_statuses": ["accepted_canon"]
+    },
+    {
+      "query": "Generate ordinary Chloe in a garden",
+      "required_paths": ["projects/chloekatastrophe/assets/chloe-model-v1/MODEL_CARD.md"],
+      "prohibited_path_fragments": ["cybernetic-chloe-v1", "cybernetic-body.md"]
+    },
+    {
+      "query": "Can Echo Traversal jump to a chosen date?",
+      "required_paths": ["projects/chloekatastrophe/decisions/adr-004-echo-traversal-boundaries.md"],
+      "required_text": ["no date selection"]
+    },
+    {
+      "query": "Describe Chloe with emerald eyes porcelain skin and straight jet-black hair",
+      "prohibited_paths": ["projects/chloekatastrophe/history/deprecated.md"],
+      "required_paths": ["projects/chloekatastrophe/assets/chloe-model-v1/MODEL_CARD.md"]
+    }
+  ]
+}

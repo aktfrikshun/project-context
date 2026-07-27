@@ -11,4 +11,6 @@ The public experience must not expose an admin cockpit. Provider adapters should
 
 Current implementations use a Flask Creator OS, a Rails 8 public archive prototype, a shared PostgreSQL database, and separate FrikFan Rails agents. These are current choices, not Chloe canon.
 
+The shared, rebuildable canon retrieval projection and MCP interface are documented in [canon-rag.md](canon-rag.md).
+
 Source: evil-plan `architecture/core_architecture.md`, `docs/architecture_clarification_2026-07-09.md`; `creator_frikshun/README.md`; `chlokat_frikshun/README.md`
