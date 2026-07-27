@@ -25,12 +25,14 @@ Cybernetic Chloe must remain recognizably continuous with the approved [Chloe Mo
 - Clear transparent structural housings with visible bright-green illuminated internal pathways.
 - Silver exterior shells at major joints and dark mechanical joint components.
 - Green illumination remains visible in bright studio and dim cafe conditions.
+- Left eye: artificial, with a subtle, slightly brighter emerald-green glimmer than the natural right eye; established by ADR-006 textual canon, not adequately represented by current pack media.
 - Chloe Model v1 remains the underlying identity and performance foundation.
 
 ## Prohibited current use
 
 - Inventing unseen rear surfaces, hidden mechanisms, surgical interfaces, scars, or engineering explanations.
-- Adding an artificial eye or other cybernetic anatomy without a separately approved reference or decision.
+- Exaggerating the artificial left eye into a conspicuous glowing lens, visible mechanical socket, or facial redesign.
+- Adding other cybernetic anatomy without a separately approved reference or decision.
 - Treating task wording, chat summaries, historical prompts, or generated images as approved visual evidence.
 
 ## Approval gate

@@ -7,3 +7,4 @@ These ADRs normalize only explicit, significant decisions found in source docume
 - [ADR-003: Preserve status and provenance](adr-003-status-and-provenance.md)
 - [ADR-004: Bound Echo Traversal and cosmological claims](adr-004-echo-traversal-boundaries.md)
 - [ADR-005: Version Cybernetic Chloe as an additive reference pack](adr-005-cybernetic-chloe-reference-pack.md) — accepted
+- [ADR-006: Establish Cybernetic Chloe's artificial left eye](adr-006-cybernetic-left-eye.md) — accepted textual canon; adequate image pending

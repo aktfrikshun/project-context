@@ -69,5 +69,13 @@ def test_section_status_overrides_document_authority() -> None:
     assert classified["Deprecated concepts"]["default_eligible"] is False
 
 
+def test_artificial_left_eye_decision_is_accepted() -> None:
+    path = ROOT / "projects/chloekatastrophe/decisions/adr-006-cybernetic-left-eye.md"
+    document = load_document(ROOT, path)
+    result = classify(document, sections(document)[0])
+    assert result["authority"] == "accepted_decision"
+    assert result["default_eligible"] is True
+
+
 def test_repository_validates() -> None:
     assert validate(ROOT) == []
