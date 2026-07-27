@@ -1,0 +1,7 @@
+# Purpose: Keep local editor, operating-system, and generated retrieval artifacts out of the knowledge source.
+.DS_Store
+.idea/
+.vscode/
+*.swp
+.cache/
+derived/
