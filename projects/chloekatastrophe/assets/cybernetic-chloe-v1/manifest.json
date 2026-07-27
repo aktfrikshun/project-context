@@ -9,6 +9,26 @@
   "approval_date": "2026-07-27",
   "approved_by": "Allen Taylor",
   "superseded_by": null,
+  "anatomical_constraints": {
+    "cybernetic_side": "anatomical left only",
+    "frontal_view_position": "viewer right",
+    "left_arm_extent": "shoulder joint through fingertips, including hand and every finger",
+    "left_leg_extent": "hip joint through toes, including entire thigh, knee, lower leg, ankle, foot, and toes",
+    "natural_side": "anatomical right arm, right leg, and right eye",
+    "prohibited": [
+      "right-side prostheses",
+      "partial left-leg prosthesis",
+      "natural left foot or toes",
+      "prosthesis beginning below the hip",
+      "additional cybernetic anatomy"
+    ]
+  },
+  "generation_validation": [
+    "For frontal and near-frontal views, reject if either prosthetic limb appears on the viewer's left.",
+    "Reject if any visible portion of the anatomical left leg from hip through toes is natural.",
+    "Reject if the anatomical right arm or right leg is cybernetic.",
+    "Reject if additional cybernetic anatomy is present."
+  ],
   "assets": [
     {
       "asset_id": "cybernetic_chloe_v1_front_full_body",
@@ -20,10 +40,28 @@
       "provenance": "FoxyAI image supplied and explicitly approved for canon by Allen Taylor on 2026-07-27.",
       "creator": "FoxyAI",
       "approval_date": "2026-07-27",
-      "permitted_uses": ["canon retrieval", "visual continuity reference", "image and video generation reference"],
+      "permitted_uses": [
+        "canon retrieval",
+        "visual continuity reference",
+        "image and video generation reference"
+      ],
       "view": "neutral front full-body view in bright studio light",
-      "features": ["left arm cybernetic from shoulder through articulated hand", "left leg cybernetic from upper thigh through ankle with human-appearing foot", "transparent clear housings", "bright green illuminated internal pathways", "silver and dark mechanical joints", "black slip dress", "ordinary Chloe facial identity"],
-      "limitations": ["single frontal view", "does not establish artificial-eye canon", "does not establish unseen rear surfaces", "does not establish narrative cause or date"],
+      "features": [
+        "anatomical left arm cybernetic from shoulder joint through fingertips and appearing on viewer's right",
+        "anatomical left leg canonically cybernetic from hip joint through toes and appearing on viewer's right",
+        "transparent clear housings",
+        "bright green illuminated internal pathways",
+        "silver and dark mechanical joints",
+        "black slip dress",
+        "ordinary Chloe facial identity"
+      ],
+      "limitations": [
+        "single frontal view",
+        "surface treatment or occlusion must not be interpreted as a natural left foot or partial-leg prosthesis",
+        "does not establish artificial-eye canon",
+        "does not establish unseen rear surfaces",
+        "does not establish narrative cause or date"
+      ],
       "relationship_to_chloe_model_v1": "Primary full-body cybernetic overlay reference; preserve Chloe Model v1 identity beneath the additive prostheses."
     },
     {
@@ -36,10 +74,26 @@
       "provenance": "FoxyAI image supplied and explicitly approved for canon by Allen Taylor on 2026-07-27.",
       "creator": "FoxyAI",
       "approval_date": "2026-07-27",
-      "permitted_uses": ["canon retrieval", "visual continuity reference", "image and video generation reference"],
+      "permitted_uses": [
+        "canon retrieval",
+        "visual continuity reference",
+        "image and video generation reference"
+      ],
       "view": "seated three-quarter/full-body studio view",
-      "features": ["left shoulder joint and complete left arm prosthesis", "left leg prosthesis visible across thigh and shin", "transparent housings", "green internal illumination", "silver joint shells", "articulated metallic fingers", "human-appearing left foot"],
-      "limitations": ["cross-legged pose obscures some attachment boundaries", "does not establish rear surfaces", "does not establish artificial-eye canon"],
+      "features": [
+        "anatomical left shoulder joint and complete left arm prosthesis",
+        "anatomical left leg canonically cybernetic from hip joint through toes",
+        "transparent housings",
+        "green internal illumination",
+        "silver joint shells",
+        "articulated metallic fingers"
+      ],
+      "limitations": [
+        "cross-legged pose obscures some attachment boundaries",
+        "surface treatment or occlusion must not be interpreted as a natural left foot or partial-leg prosthesis",
+        "does not establish rear surfaces",
+        "does not establish artificial-eye canon"
+      ],
       "relationship_to_chloe_model_v1": "Confirms the prosthetic design during a restrained seated pose while preserving Chloe Model v1 identity."
     },
     {
@@ -52,10 +106,25 @@
       "provenance": "FoxyAI image supplied and explicitly approved for canon by Allen Taylor on 2026-07-27.",
       "creator": "FoxyAI",
       "approval_date": "2026-07-27",
-      "permitted_uses": ["canon retrieval", "visual continuity reference", "image and video generation reference"],
+      "permitted_uses": [
+        "canon retrieval",
+        "visual continuity reference",
+        "image and video generation reference"
+      ],
       "view": "dynamic side/three-quarter standing pose in bright studio light",
-      "features": ["articulated left arm raised overhead", "left leg load-bearing in motion", "transparent green-lit limb housings", "silver and dark joint mechanisms", "black flowing dress", "natural hair and body movement"],
-      "limitations": ["dress obscures the upper left leg", "motion pose limits exact proportion measurement", "does not establish artificial-eye canon"],
+      "features": [
+        "articulated anatomical left arm raised overhead",
+        "anatomical left leg cybernetic from hip joint through toes and load-bearing in motion",
+        "transparent green-lit limb housings",
+        "silver and dark joint mechanisms",
+        "black flowing dress",
+        "natural hair and body movement"
+      ],
+      "limitations": [
+        "dress obscures the upper left leg but does not change the hip-to-toes canonical extent",
+        "motion pose limits exact proportion measurement",
+        "does not establish artificial-eye canon"
+      ],
       "relationship_to_chloe_model_v1": "Motion and articulation reference for the additive prostheses without changing Chloe Model v1 identity or performance."
     },
     {
@@ -68,10 +137,25 @@
       "provenance": "FoxyAI video supplied and explicitly approved for canon by Allen Taylor on 2026-07-27.",
       "creator": "FoxyAI",
       "approval_date": "2026-07-27",
-      "permitted_uses": ["canon retrieval", "motion continuity reference", "image and video generation reference"],
+      "permitted_uses": [
+        "canon retrieval",
+        "motion continuity reference",
+        "image and video generation reference"
+      ],
       "view": "10.054-second portrait motion reference transitioning from studio walking to a dim cafe",
-      "features": ["left arm and left leg prostheses remain consistent across movement", "green internal illumination persists in bright and low light", "transparent housings and articulated joints", "left hand grasps and lifts a cup", "natural restrained cafe behavior"],
-      "limitations": ["compressed generated motion reference", "some limb regions are occluded during the cafe sequence", "does not establish artificial-eye canon", "audio is not character voice canon"],
+      "features": [
+        "anatomical left arm and full hip-to-toes anatomical left leg prostheses remain consistent across movement",
+        "green internal illumination persists in bright and low light",
+        "transparent housings and articulated joints",
+        "left hand grasps and lifts a cup",
+        "natural restrained cafe behavior"
+      ],
+      "limitations": [
+        "compressed generated motion reference",
+        "some limb regions are occluded during the cafe sequence but occlusion does not alter canonical extent",
+        "does not establish artificial-eye canon",
+        "audio is not character voice canon"
+      ],
       "relationship_to_chloe_model_v1": "Primary movement and low-light behavior reference for the cybernetic overlay; Chloe Model v1 remains the identity and performance base."
     },
     {
@@ -84,10 +168,25 @@
       "provenance": "ChatGPT-generated image supplied and explicitly approved as the canonical artificial-left-eye reference by Allen Taylor on 2026-07-27.",
       "creator": "ChatGPT image generation",
       "approval_date": "2026-07-27",
-      "permitted_uses": ["canon retrieval", "facial and eye continuity reference", "image and video generation reference"],
+      "permitted_uses": [
+        "canon retrieval",
+        "facial and eye continuity reference",
+        "image and video generation reference"
+      ],
       "view": "well-lit frontal head-and-shoulders portrait",
-      "features": ["anatomical left eye appears on viewer's right", "left iris has a subtly brighter emerald-green glimmer than the natural right iris", "normal human eye anatomy is preserved", "no exposed eye machinery or facial cybernetic seams", "restrained neutral expression", "Chloe facial identity remains natural and continuous"],
-      "limitations": ["headshot does not show limb prostheses", "single frontal lighting condition", "does not establish hidden eye mechanisms or surgical interface"],
+      "features": [
+        "anatomical left eye appears on viewer's right",
+        "left iris has a subtly brighter emerald-green glimmer than the natural right iris",
+        "normal human eye anatomy is preserved",
+        "no exposed eye machinery or facial cybernetic seams",
+        "restrained neutral expression",
+        "Chloe facial identity remains natural and continuous"
+      ],
+      "limitations": [
+        "headshot does not show limb prostheses",
+        "single frontal lighting condition",
+        "does not establish hidden eye mechanisms or surgical interface"
+      ],
       "relationship_to_chloe_model_v1": "Primary close visual reference for ADR-006's artificial-left-eye treatment; preserve Chloe Model v1 facial identity and natural right eye."
     }
   ]
