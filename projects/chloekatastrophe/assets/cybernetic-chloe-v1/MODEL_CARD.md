@@ -32,7 +32,6 @@ Cybernetic Chloe must remain recognizably continuous with the approved [Chloe Mo
 - Inventing unseen rear surfaces, hidden mechanisms, surgical interfaces, scars, or engineering explanations.
 - Adding an artificial eye or other cybernetic anatomy without a separately approved reference or decision.
 - Treating task wording, chat summaries, historical prompts, or generated images as approved visual evidence.
-- Presenting this empty pack as a completed production reference.
 
 ## Approval gate
 

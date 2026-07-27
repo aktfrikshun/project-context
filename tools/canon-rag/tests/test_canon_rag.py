@@ -58,5 +58,16 @@ def test_cybernetic_specification_is_accepted_visual_canon() -> None:
     assert result["requires_status_label"] is False
 
 
+def test_section_status_overrides_document_authority() -> None:
+    path = ROOT / "projects/chloekatastrophe/experience/cybernetic-body.md"
+    document = load_document(ROOT, path)
+    classified = {section.heading: classify(document, section) for section in sections(document)}
+    assert classified["Accepted visual design"]["authority"] == "accepted_canon"
+    assert classified["Implementation and generation guidance"]["authority"] == "implementation_detail"
+    assert classified["Unresolved questions"]["authority"] == "unresolved"
+    assert classified["Deprecated concepts"]["authority"] == "deprecated"
+    assert classified["Deprecated concepts"]["default_eligible"] is False
+
+
 def test_repository_validates() -> None:
     assert validate(ROOT) == []
