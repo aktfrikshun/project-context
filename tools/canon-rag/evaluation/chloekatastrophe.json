@@ -12,9 +12,38 @@
       "prohibited_paths": ["projects/chloekatastrophe/history/deprecated.md"]
     },
     {
+      "query": "Cybernetic Chloe seated at a futuristic cafe sipping coffee and reviewing a holographic tablet",
+      "required_paths": [
+        "projects/chloekatastrophe/assets/chloe-model-v1/MODEL_CARD.md",
+        "projects/chloekatastrophe/assets/cybernetic-chloe-v1/MODEL_CARD.md",
+        "projects/chloekatastrophe/experience/cybernetic-body.md"
+      ],
+      "required_text": [
+        "anatomical left arm",
+        "hip joint through the toes",
+        "viewer's right",
+        "Do not add right-side cybernetics"
+      ],
+      "required_statuses": ["accepted_canon"],
+      "prohibited_paths": ["projects/chloekatastrophe/history/deprecated.md"]
+    },
+    {
       "query": "Which side of Chloe is cybernetic?",
       "required_paths": ["projects/chloekatastrophe/experience/cybernetic-body.md"],
-      "required_text": ["left arm", "left leg"],
+      "required_text": ["anatomical left arm", "anatomical left leg", "viewer's right"],
+      "required_statuses": ["accepted_canon"]
+    },
+    {
+      "query": "Does Chloe's cybernetic leg start at the knee or include the whole leg?",
+      "required_paths": [
+        "projects/chloekatastrophe/experience/cybernetic-body.md",
+        "projects/chloekatastrophe/assets/cybernetic-chloe-v1/MODEL_CARD.md"
+      ],
+      "required_text": [
+        "hip joint through the toes",
+        "entire thigh",
+        "do not begin the prosthesis at the knee"
+      ],
       "required_statuses": ["accepted_canon"]
     },
     {
