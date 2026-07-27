@@ -22,6 +22,24 @@ STATUS_PATTERN = re.compile(
 )
 
 
+def _section_authority(section: Section, section_status: str) -> str | None:
+    """Return an explicit section classification before document defaults."""
+    normalized_status = section_status.strip().replace(" ", "_")
+    if normalized_status in AUTHORITY_SCORE:
+        return normalized_status
+
+    heading = section.heading.casefold()
+    if any(marker in heading for marker in ("deprecated", "superseded", "rejected")):
+        return "deprecated"
+    if any(marker in heading for marker in ("unresolved", "open question", "contradiction", "ambiguous", "hidden detail")):
+        return "unresolved"
+    if any(marker in heading for marker in ("implementation guidance", "generation guidance", "implementation and generation")):
+        return "implementation_detail"
+    if any(marker in heading for marker in ("proposal", "proposed")):
+        return "proposal"
+    return None
+
+
 def _normalized_status(document: Document, section: Section) -> str:
     explicit = str(document.metadata.get("status", "")).lower()
     explicit_authority = str(document.metadata.get("authority", "")).lower()
@@ -30,6 +48,9 @@ def _normalized_status(document: Document, section: Section) -> str:
     status = f"{explicit} {section_status} {section.heading.lower()}"
     path = document.path.lower()
 
+    section_authority = _section_authority(section, section_status)
+    if section_authority:
+        return section_authority
     if explicit_authority in AUTHORITY_SCORE:
         return explicit_authority
     if "/assets/chloe-model-v1/" in path and path.endswith(("model_card.md", "readme.md")):

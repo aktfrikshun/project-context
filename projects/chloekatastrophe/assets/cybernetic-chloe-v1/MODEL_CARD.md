@@ -10,7 +10,7 @@ authority: accepted_canon
 
 **APPROVED VISUAL CANON — CYBERNETIC CHLOE v1**
 
-Three approved still references and one approved motion study are present. Use their manifest records and limitations together; do not extrapolate hidden details.
+Four approved still references and one approved motion study are present. Use their manifest records and limitations together; do not extrapolate hidden details.
 
 Confirmed anatomy: at an unresolved point in the future continuity, Chloe receives cybernetic prostheses for her **left arm** and **left leg**. Their approved visual design is recorded below and in the asset manifest.
 
@@ -25,14 +25,15 @@ Cybernetic Chloe must remain recognizably continuous with the approved [Chloe Mo
 - Clear transparent structural housings with visible bright-green illuminated internal pathways.
 - Silver exterior shells at major joints and dark mechanical joint components.
 - Green illumination remains visible in bright studio and dim cafe conditions.
+- Left eye: artificial, with a subtle, slightly brighter emerald-green glimmer than the natural right eye; visually grounded by `cybernetic-chloe-left-eye-headshot.png` and governed by ADR-006.
 - Chloe Model v1 remains the underlying identity and performance foundation.
 
 ## Prohibited current use
 
 - Inventing unseen rear surfaces, hidden mechanisms, surgical interfaces, scars, or engineering explanations.
-- Adding an artificial eye or other cybernetic anatomy without a separately approved reference or decision.
+- Exaggerating the artificial left eye into a conspicuous glowing lens, visible mechanical socket, or facial redesign.
+- Adding other cybernetic anatomy without a separately approved reference or decision.
 - Treating task wording, chat summaries, historical prompts, or generated images as approved visual evidence.
-- Presenting this empty pack as a completed production reference.
 
 ## Approval gate
 

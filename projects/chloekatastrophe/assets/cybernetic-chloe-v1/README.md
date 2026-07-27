@@ -6,9 +6,9 @@ authority: accepted_canon
 
 # Cybernetic Chloe v1 Reference Pack
 
-This versioned pack contains the approved Cybernetic Chloe reference media supplied by Allen Taylor on 2026-07-27: three still images and one motion study. The manifest is authoritative for asset IDs, checksums, provenance, demonstrated features, limitations, and permitted use.
+This versioned pack contains the approved Cybernetic Chloe reference media supplied by Allen Taylor on 2026-07-27: four still images and one motion study. The manifest is authoritative for asset IDs, checksums, provenance, demonstrated features, limitations, and permitted use.
 
-The pack establishes transparent clear housings, bright green illuminated internal pathways, silver and dark mechanical joints, an articulated metallic left hand, and a prosthetic left leg extending from the upper thigh through the ankle while retaining a human-appearing foot. It demonstrates stable green illumination in bright studio and dim cafe light. Artificial-eye canon, unseen rear surfaces, exact engineering, narrative cause, and chronology remain unresolved.
+The pack establishes transparent clear housings, bright green illuminated internal pathways, silver and dark mechanical joints, an articulated metallic left hand, and a prosthetic left leg extending from the upper thigh through the ankle while retaining a human-appearing foot. It demonstrates stable green illumination in bright studio and dim cafe light. The approved headshot establishes the artificial left eye's subtle, slightly brighter emerald-green glimmer while preserving natural human anatomy. Unseen surfaces, exact engineering, narrative cause, and chronology remain unresolved.
 
 ## Approved media
 
@@ -16,10 +16,11 @@ The pack establishes transparent clear housings, bright green illuminated intern
 - `cybernetic-chloe-seated-front.jpeg` — seated articulation and joint reference.
 - `cybernetic-chloe-standing-motion.jpeg` — dynamic extension and load-bearing reference.
 - `cybernetic-chloe-cafe-motion.mp4` — motion, grasping, and low-light reference.
+- `cybernetic-chloe-left-eye-headshot.png` — primary artificial-left-eye and facial-continuity reference.
 
 ## Remaining gaps
 
-- No approved artificial-eye reference is present.
+- Hidden artificial-eye mechanisms and surgical interfaces remain unknown.
 - Rear surfaces and some upper-leg/attachment views are not shown.
 - The media are visual authority, not engineering schematics; hidden mechanisms must not be invented as canon.
 - The motion study's audio is not Chloe voice canon.

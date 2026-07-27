@@ -53,10 +53,16 @@ class CanonService:
 
     def explain_retrieval(self, project: str, query: str) -> dict[str, object]:
         result = self.search_knowledge(project, query, {"limit": 10})
+        _, records = self._records()
+        status_counts: dict[str, int] = {}
+        for record in records:
+            status = str(record.get("status", "unknown"))
+            status_counts[status] = status_counts.get(status, 0) + 1
         result["policy"] = {
             "weights": {"lexical": 0.55, "semantic": 0.25, "authority": 0.20, "exact_anatomy_bonus": 0.10},
             "default_exclusions": ["deprecated", "generated_artifact", "historical"],
-            "unresolved_status_preserved": True,
+            "status_discipline": "section markers override document-level defaults",
+            "index_status_counts": status_counts,
             "embedding_fallback": "hash-v1",
         }
         return result

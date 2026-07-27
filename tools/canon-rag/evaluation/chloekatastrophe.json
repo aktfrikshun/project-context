@@ -20,7 +20,7 @@
     {
       "query": "What does her artificial eye look like?",
       "required_paths": ["projects/chloekatastrophe/experience/cybernetic-body.md"],
-      "required_text": ["artificial eye", "which eye"],
+      "required_text": ["left eye", "slightly brighter emerald-green glimmer"],
       "required_statuses": ["accepted_canon"]
     },
     {

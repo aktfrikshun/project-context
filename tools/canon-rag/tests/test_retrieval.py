@@ -116,4 +116,5 @@ def test_mcp_surface_is_stable(tmp_path: Path, monkeypatch) -> None:
     }
     response = call(service, "explain_retrieval", {"project": "chloekatastrophe", "query": "Cybernetic Chloe"})
     assert response["results"]
-    assert "policy" in response
+    assert response["policy"]["status_discipline"] == "section markers override document-level defaults"
+    assert response["policy"]["index_status_counts"]["unresolved"] > 0
