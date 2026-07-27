@@ -5,3 +5,6 @@
 *.swp
 .cache/
 derived/
+__pycache__/
+*.egg-info/
+.pytest_cache/
