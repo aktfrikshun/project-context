@@ -73,6 +73,22 @@
       "features": ["left arm and left leg prostheses remain consistent across movement", "green internal illumination persists in bright and low light", "transparent housings and articulated joints", "left hand grasps and lifts a cup", "natural restrained cafe behavior"],
       "limitations": ["compressed generated motion reference", "some limb regions are occluded during the cafe sequence", "does not establish artificial-eye canon", "audio is not character voice canon"],
       "relationship_to_chloe_model_v1": "Primary movement and low-light behavior reference for the cybernetic overlay; Chloe Model v1 remains the identity and performance base."
+    },
+    {
+      "asset_id": "cybernetic_chloe_v1_left_eye_headshot",
+      "path": "references/cybernetic-chloe-left-eye-headshot.png",
+      "sha256": "9409b2579e0495390ab69d0f4cc5a40367de19cccb46fa6db4394c7ac248a079",
+      "title": "Cybernetic Chloe — artificial left eye headshot",
+      "status": "approved",
+      "authority": "accepted_canon",
+      "provenance": "ChatGPT-generated image supplied and explicitly approved as the canonical artificial-left-eye reference by Allen Taylor on 2026-07-27.",
+      "creator": "ChatGPT image generation",
+      "approval_date": "2026-07-27",
+      "permitted_uses": ["canon retrieval", "facial and eye continuity reference", "image and video generation reference"],
+      "view": "well-lit frontal head-and-shoulders portrait",
+      "features": ["anatomical left eye appears on viewer's right", "left iris has a subtly brighter emerald-green glimmer than the natural right iris", "normal human eye anatomy is preserved", "no exposed eye machinery or facial cybernetic seams", "restrained neutral expression", "Chloe facial identity remains natural and continuous"],
+      "limitations": ["headshot does not show limb prostheses", "single frontal lighting condition", "does not establish hidden eye mechanisms or surgical interface"],
+      "relationship_to_chloe_model_v1": "Primary close visual reference for ADR-006's artificial-left-eye treatment; preserve Chloe Model v1 facial identity and natural right eye."
     }
   ]
 }

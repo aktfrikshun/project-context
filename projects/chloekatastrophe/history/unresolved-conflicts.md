@@ -52,8 +52,8 @@ Human review: Reconcile public identity canon with live channel state before tre
 
 ## Cybernetic Chloe visual design
 
-Future cybernetic continuity and the Cybernetic Chloe v1 visual pack are confirmed canon. The approved media establish left-arm and left-leg prostheses, their visible clear/green-lit/silver-and-dark design, articulation, and observed light behavior. ADR-006 separately establishes an artificial left eye with a subtle, slightly brighter emerald-green glimmer as textual canon; no current image adequately represents it. Rear surfaces, hidden mechanisms, exact material composition, and surgical interfaces remain unresolved and must not be inferred.
+Future cybernetic continuity and the Cybernetic Chloe v1 visual pack are confirmed canon. The approved media establish left-arm and left-leg prostheses, their visible clear/green-lit/silver-and-dark design, articulation, and observed light behavior. ADR-006 and the dedicated eye headshot establish an artificial left eye with a subtle, slightly brighter emerald-green glimmer. Rear surfaces, hidden mechanisms, exact material composition, and surgical interfaces remain unresolved and must not be inferred.
 
 Source: `experience/cybernetic-body.md`, `assets/cybernetic-chloe-v1/manifest.json`
 
-Human review: Add an approved close visual reference for the artificial-left-eye treatment when an image adequately represents it.
+Human review: Any future eye reference must preserve the headshot's subtle human-anatomy treatment and be explicitly approved before superseding it.

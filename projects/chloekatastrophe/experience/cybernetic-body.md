@@ -8,7 +8,7 @@ authority: accepted_canon
 
 ## Canon status
 
-Cybernetic/digital continuity is established future story direction. The approved Cybernetic Chloe v1 pack establishes the visible prosthetic design, while ADR-006 establishes the artificial-left-eye treatment in text. Narrative cause, chronology, and engineering remain unresolved.
+Cybernetic/digital continuity is established future story direction. The approved Cybernetic Chloe v1 pack establishes the visible prosthetic design and artificial-left-eye treatment, governed by ADR-006. Narrative cause, chronology, and engineering remain unresolved.
 
 ## Confirmed canon
 
@@ -40,7 +40,7 @@ Sources: `identity/character.md`, `history/timeline.md`, `decisions/adr-002-chlo
 
 ## Ambiguous or hidden details
 
-Rear surfaces, hidden mechanisms, surgical interfaces, exact material composition, and engineering remain unknown. The references show illuminated pathways, but they do not establish their technical function. No current approved image adequately represents the textual artificial-left-eye canon.
+Rear surfaces, hidden mechanisms, surgical interfaces, exact material composition, and engineering remain unknown. The references show illuminated pathways, but they do not establish their technical function. The approved eye headshot establishes visible appearance only, not the eye's hidden mechanism or surgical interface.
 
 ## Unresolved questions
 

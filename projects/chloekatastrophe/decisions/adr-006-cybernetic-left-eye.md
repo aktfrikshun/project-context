@@ -10,19 +10,19 @@ authority: accepted_decision
 
 ## Context
 
-The approved Cybernetic Chloe v1 media do not adequately represent an artificial eye. Allen nevertheless confirmed the intended eye treatment as canon and directed that it be preserved in text rather than inferred from the existing images.
+The initial Cybernetic Chloe v1 media did not adequately represent an artificial eye. Allen first confirmed the intended treatment as textual canon, then supplied and explicitly approved a dedicated frontal headshot as its canonical visual reference.
 
 ## Decision
 
 Cybernetic Chloe's **left eye is artificial**. Its visible treatment is deliberately subtle: it retains Chloe's established eye identity while carrying a **slightly brighter emerald-green glimmer** than her natural right eye.
 
-This is accepted textual canon. It does not assert that any current reference image adequately depicts the effect.
+This is accepted canon, visually grounded by `assets/cybernetic-chloe-v1/references/cybernetic-chloe-left-eye-headshot.png`.
 
 ## Consequences
 
 - Cybernetic Chloe generation should include the subtle left-eye glimmer without turning it into a conspicuous glowing lens, mechanical socket, or facial redesign.
 - Chloe Model v1 remains the identity foundation for both eyes.
-- The current Cybernetic Chloe v1 image and video assets remain authoritative for the details they demonstrate, but not as evidence of the artificial-eye effect.
-- A future approved close reference may visually ground the eye treatment without changing this decision.
+- The dedicated eye headshot is the primary visual authority for the effect; the other Cybernetic Chloe v1 media remain authoritative only for the details they demonstrate.
+- The image establishes visible appearance, not hidden mechanisms or a surgical interface.
 
 Source: explicit canon direction from Allen Taylor on 2026-07-27.
