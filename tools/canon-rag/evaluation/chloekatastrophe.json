@@ -63,6 +63,18 @@
       "required_text": ["no date selection"]
     },
     {
+      "query": "Generate a Questions from the Echo post about time souls and parallel selves",
+      "required_paths": [
+        "projects/chloekatastrophe/experience/questions-from-the-echo.md"
+      ],
+      "required_text": [
+        "generation-eligible question bank",
+        "not confirmed metaphysics",
+        "precise circumstances of Gregor's death"
+      ],
+      "required_statuses": ["current_guidance"]
+    },
+    {
       "query": "Describe Chloe with emerald eyes porcelain skin and straight jet-black hair",
       "prohibited_paths": ["projects/chloekatastrophe/history/deprecated.md"],
       "required_paths": ["projects/chloekatastrophe/assets/chloe-model-v1/MODEL_CARD.md"]

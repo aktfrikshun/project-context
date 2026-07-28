@@ -43,5 +43,6 @@ Chloe reconstructs a lost human life from songs, images, documents, memories, fa
 - Approved image inputs: `assets/chloe-model-v1/` and its `MODEL_CARD.md` / manifests.
 - Cybernetic Chloe: load `experience/cybernetic-body.md` and the approved `assets/cybernetic-chloe-v1/` pack in addition to Chloe Model v1.
 - Product work: `product/`, then the relevant file under `projects/`.
+- Automated philosophical posts: load `experience/questions-from-the-echo.md` with `domain/concepts.md` and `identity/voice-and-tone.md`.
 - Systems/data/security: `architecture/`.
 - Authority or disputes: `provenance/source-inventory.md`, `history/deprecated.md`, and `history/unresolved-conflicts.md`.
