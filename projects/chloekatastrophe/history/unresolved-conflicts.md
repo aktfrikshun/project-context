@@ -44,11 +44,13 @@ Source: marketing archive `canon/UNRESOLVED_QUESTIONS.md`, `canon/DAUGHTER_OF_EC
 
 ## Public launch
 
-The canonical public-identity file still lists TikTok handle, first post, introductory artifact, and fan-submission endpoint as open, while other repositories may contain later production work.
+The canonical Facebook, Instagram, TikTok, YouTube, X, and FanVue profiles were confirmed by Allen Taylor on 2026-08-03 and are recorded in `identity/public-presence.md`. The earlier pending TikTok handle is resolved.
 
-Source: marketing archive `canon/PUBLIC_IDENTITY.md`; Creator OS implementation docs
+The first formal introductory artifact remains open. The public application boundary for archive queries and fragment intake is accepted as `https://fans.frikshun.com/chloe`, with public routes beneath `/chloe` and private moderation retained outside that namespace. Existing live publications do not silently settle which artifact should function as the canonical introduction.
 
-Human review: Reconcile public identity canon with live channel state before treating any handle or workflow as confirmed.
+Source: Allen Taylor direct confirmation; marketing archive `canon/PUBLIC_IDENTITY.md`; Creator OS implementation docs
+
+Human review: Decide the canonical introductory artifact. Decide later whether `chloefans.frikshun.com` should redirect to the canonical Fans URL; do not treat it as a second product or content origin.
 
 ## Cybernetic Chloe visual design
 

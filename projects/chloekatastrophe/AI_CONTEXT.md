@@ -42,7 +42,8 @@ Chloe reconstructs a lost human life from songs, images, documents, memories, fa
 - Visuals: `experience/ui-guidelines.md` and `decisions/adr-002-chloe-model-v1.md`.
 - Approved image inputs: `assets/chloe-model-v1/` and its `MODEL_CARD.md` / manifests.
 - Cybernetic Chloe: load `experience/cybernetic-body.md` and the approved `assets/cybernetic-chloe-v1/` pack in addition to Chloe Model v1.
-- Product work: `product/`, then the relevant file under `projects/`.
+- Product work: `product/`, then the relevant file under `projects/`. For fan fragment intake, media, notification, moderation, or publication work, load `product/fan-fragment-submission-policy.md`.
 - Automated philosophical posts: load `experience/questions-from-the-echo.md` with `domain/concepts.md` and `identity/voice-and-tone.md`.
+- Social posts and audience communication: load `identity/public-presence.md`, `experience/social-and-archive-depth.md`, `peers/README.md`, and relevant records under `peers/` with `identity/voice-and-tone.md`. Social copy is the concise signal; the FrikShun marketing archive may carry the fuller record. Peer observations may guide communication strategy but are not Chloe canon and must not be copied as language, imagery, character design, or mythology.
 - Systems/data/security: `architecture/`.
 - Authority or disputes: `provenance/source-inventory.md`, `history/deprecated.md`, and `history/unresolved-conflicts.md`.

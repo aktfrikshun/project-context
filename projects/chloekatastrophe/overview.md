@@ -24,7 +24,7 @@ Chloe is a self-aware virtual woman reconstructing the lost human life of Chloe 
 
 Narrative identity, family foundations, voice, public-name rules, and key traversal boundaries have accepted decisions. Chloe Model v1 is the active visual-production canon. Much of the far-future cosmology is an approved model or story direction, not settled metaphysical truth.
 
-Start with [identity/character.md](identity/character.md), [domain/concepts.md](domain/concepts.md), [architecture/overview.md](architecture/overview.md), and [history/unresolved-conflicts.md](history/unresolved-conflicts.md).
+Start with [identity/character.md](identity/character.md), [identity/public-presence.md](identity/public-presence.md), [domain/concepts.md](domain/concepts.md), [architecture/overview.md](architecture/overview.md), and [history/unresolved-conflicts.md](history/unresolved-conflicts.md).
 
 Known gaps include Chloe's exact birthplace, Gregor's precise death, the creation and fate of biological and AI Chloe, the first Echo Bloom perturbation, and several public-launch details.
 

@@ -2,7 +2,7 @@
 
 ## Current or documented
 
-- Social publication/metrics: Facebook Page, Instagram, Threads, X, and FanVue in Creator OS; TikTok reel export is review-only.
+- Social publication/metrics: Facebook Page, Instagram, Threads, X, YouTube, and FanVue in Creator OS; TikTok reel export is review-only. Canonical public endpoints are recorded in `identity/public-presence.md`.
 - Music: DistroKid manages distribution; archive stores release metadata and streaming links.
 - Media storage: local intake and private object storage with temporary public delivery where a platform requires it.
 - AI: provider-backed text and image analysis/generation behind application services; absence or failure must degrade safely.
